@@ -15,6 +15,7 @@ class TestSwig(unittest.TestCase):
         swig_tests.check_patate(c[31])
         carotte = swig_tests.make_carotte("orange")
         self.assertIsNotNone(carotte)
+        self.assertTrue(carotte.is_orange())
         carotte_rouge = swig_tests.Carotte("rouge")
         swig_tests.say_hello(carotte_rouge)
         celeri = swig_tests.make_celeri()

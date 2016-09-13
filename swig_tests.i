@@ -340,6 +340,11 @@ void check_patate(HPatate hp);
             std::cout << "Je suis une carotte " << m_couleur << std::endl;
         }
 
+		std::string couleur() const
+		{
+			return m_couleur;
+		}
+
     private:
         std::string m_couleur;
     };
@@ -390,6 +395,14 @@ void check_patate(HPatate hp);
         std::cout << "Un celeri avec l'adresse " << c << std::endl;
     }
 %}
+
+%extend Carotte
+{
+	bool is_orange() const
+	{
+		return self->couleur() == "orange";
+	}
+}
 
 %ref_counted_handle(Navet)
 
