@@ -2,9 +2,9 @@
 My personal sandbox for testing SWIG typemaps
 
 Prerequistes:
-- SWIG (I'm using the swigwin-3.0.8 build)
-- numpy.i (Can be found in numpy github project)
-- CMake (only if you want to use my file for help)
+* [SWIG](https://github.com/swig/swig) (I'm using the swigwin-3.0.8 build, but why don't you try [3.0.10](http://prdownloads.sourceforge.net/swig/swigwin-3.0.10.zip) )
+* numpy.i (Can be found [here](https://github.com/numpy/numpy/blob/master/tools/swig/numpy.i) in the [numpy](https://github.com/numpy/numpy) github project)
+* [CMake](https://github.com/Kitware/CMake) (only if you want to use my file for help)
 
 Here's the commands I use to build this with Visual Studio 2015. 
 Adapt all the paths with yours. 
