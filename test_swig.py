@@ -9,7 +9,7 @@ class TestSwig(unittest.TestCase):
         b = swig_tests.make_numbers_ptr()
         self.assertEqual(len(b),25)
         self.assertEqual(list(a),list(b))
-        self.assertEqual(str(type(b[0])),"<class 'int'>")
+        self.assertTrue(str(type(b[0])) == "<class 'int'>" or str(type(b[0])) == "<type 'int'>")
         c = swig_tests.make_patate_handles()
         self.assertEqual(len(c),37)
         swig_tests.check_patate(c[31])
